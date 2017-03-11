@@ -82,6 +82,28 @@ class Foo(object):
         return a
 
 
+    #------------------------------------------------------
+    # String  
+    #   -  
+    #   - 
+    def string(self): 
+        return 0
+
+
+    #------------------------------------------------------
+    # Set  
+    #   -  
+    #   -   
+    def set(self):
+        return 0
+
+
+    #------------------------------------------------------
+    # FrozenSet  
+    #   -  
+    #   - 
+    def frozenset(self): 
+        return 0
 
 
 #lists, tuples, dictionaries, strings, sets and frozensets
@@ -93,4 +115,7 @@ if __name__ == "__main__":
     print fooBar.list()
     print fooBar.tuple()
     print fooBar.dict()
+    print fooBar.string()
+    print fooBar.set()
+    print fooBar.frozenset()
     0
