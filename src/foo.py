@@ -84,9 +84,19 @@ class Foo(object):
 
     #------------------------------------------------------
     # String  
-    #   -  
+    #   - immutable
     #   - 
     def string(self): 
+        a = 'The string'              # Single quote
+        b = "The string"              # Double quote
+        c = '''The                    
+               String'''              # Triple quote 
+        d = """Special String ' " """ # Quotes in triple quotes
+        a[0]                          # Character access
+        a = a[4:]                     # Slice string
+        "%s" % "some text"            # % formatting
+        a = a + a                     # Concatenate
+        print a*3
         return 0
 
 
