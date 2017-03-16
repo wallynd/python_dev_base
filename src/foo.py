@@ -19,10 +19,9 @@ class Foo(object):
         self.foo_bar = num
 
     #------------------------------------------------------
-    # Tuples 
-    #   - faster than lists 
-    #   - immutable 
-    #   - Used as dict keys
+    # List 
+    #   - ordered collection of items
+    #   - items may be different
     def list(self):
         a = [1, 2, 3, 4];
         a.append(5)        # Append item
@@ -95,8 +94,31 @@ class Foo(object):
         a[0]                          # Character access
         a = a[4:]                     # Slice string
         "%s" % "some text"            # % formatting
-        a = a + a                     # Concatenate
-        print a*3
+        b = a + a                     # Concatenate
+        c = a*3                       # Multiply
+        '12'.isdigit()                # Digits only        
+        'as'.isalpha()                # Alphabetic characters only
+        '1a'.isalnum()                # Alphabetic characters and digits
+        'AA'.isupper()                # Uppercase
+        'aa'.islower()                # Lowercase
+        'Ta'.istitle()                # Starts with capital
+        '  '.isspace()                # Spaces only
+        'aa'.count('a')               # Count occurences
+        len('aa')                     # Length
+        'aa'.title()                  # Capitalize first leter of each word
+        'aa'.capitalize()             # Capitalize first leter
+        'AA'.lower()                  # Lower case
+        'aa'.upper()                  # Upper case
+        'Aa'.swapcase()               # Swap case 
+        b = a.center(40)              # Center in new string
+        #c = a.just(40,'-')            # Right justify in new string
+        c = a.zfill(40)               # Zero file right justify
+        a.strip()                     # Remove left and right trailing space
+        a.lstrip()                    # Remove left trailing space
+        a.rstrip()                    # Remove right trailing space
+        '\t'.expandtabs()             # Expand tabs
+
+
         return 0
 
 
